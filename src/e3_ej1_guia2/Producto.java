@@ -19,11 +19,6 @@ public class Producto {
         this.categoria = categoria;
         this.precio = precio;
     }
-
-    Producto(String plancha, String electrodomestico, int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
     
     public String getNombre() {
         return nombre;
@@ -47,6 +42,11 @@ public class Producto {
 
     public void setPrecio(double precio) {
         this.precio = precio;
+    }
+
+    @Override
+    public String toString() {
+        return nombre + ", " + categoria + "," + precio ;
     }
    
 }
